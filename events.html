@@ -1,139 +1,317 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Features - Brand</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=9f3738c3b02e0983f8d5f3b19c8cdd33">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.min.css?h=b926c3ae3aadd0fdf164a64b42ab4ad2">
-</head>
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/css/bootstrap.min.css?h=9f3738c3b02e0983f8d5f3b19c8cdd33"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/styles.min.css?h=b926c3ae3aadd0fdf164a64b42ab4ad2"
+    />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
-        <div class="container">
-            <a class="navbar-brand logo" href="#" style="border-color: rgb(3,5,64);">ROMIJA</a>
-            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
-                <span class="visually-hidden">Toggle navigation</span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/events.html">EVENTS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/causes.html">Our Causes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a
+          class="navbar-brand logo"
+          href="#"
+          style="border-color: rgb(3, 5, 64)"
+          >ROMIJA</a
+        >
+        <button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/events.html">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/causes.html">Our Causes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact-us.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+                <button class="btn btn-primary ms-lg-3" data-bs-toggle="modal" data-bs-target="#addPostModal">Add Post</button>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <main class="page">
-        <section class="clean-block features">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">OUR EVENTS</h2>
-                    <p>
-                        These events can help provide practical support, build a supportive community, and raise awareness and funds for our mission.
-                    </p>
+      <section class="clean-block features">
+        <div class="container">
+          <div class="block-heading">
+            <h2 class="text-info">OUR EVENTS</h2>
+            <p>
+              These events can help provide practical support, build a
+              supportive community, and raise awareness and funds for our
+              mission.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div id="eventContainer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add Post Modal -->
+    <div class="modal fade" id="addPostModal" tabindex="-1" aria-labelledby="addPostModalLabel" aria-hidden="true" enctype="multipart/form-data">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addPostModalLabel">Add New Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-5 feature-box">
-                        <i class="icon-star icon"></i>
-                        <h4>Resource Distribution</h4>
-                        <p>
-                            Collecting and distributing clothing for mothers and children, providing essentials like diapers, formula, and baby clothes among other resources.
-                        </p>
-                    </div>
-                    <div class="col-md-5 feature-box">
-                        <i class="icon-star icon"></i>
-                        <h4>Health and Wellness Fairs</h4>
-                        <p>
-                            Health check-ups and vaccinations for mothers and children, nutrition awareness, mental health support.
-                        </p>
-                    </div>
-                    <div class="col-md-5 feature-box">
-                        <i class="icon-star icon"></i>
-                        <h4>Educational Support Programs</h4>
-                        <p>
-                            Scholarship Opportunities that is providing financial support or resources for continuing education, life Skills Classes.
-                        </p>
-                    </div>
-                    <div class="col-md-5 feature-box">
-                        <i class="icon-star icon"></i>
-                        <h4>Outreach and Advocacy Events</h4>
-                        <p>
-                            Discussions on policy issues affecting young mothers and children.
-                        </p>
-                    </div>
+                <div class="modal-body">
+                    <form id="addPostForm" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="postName" class="form-label">Post Name</label>
+                            <input type="text" class="form-control" id="postName" name="postName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="postContent" class="form-label">Post Content</label>
+                            <textarea class="form-control" id="postContent" name="postContent" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="postImages" class="form-label">Post Images</label>
+                            <input type="file" class="form-control" id="postImage" name="postImage" accept="image/*" multiple>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="submitPost()">Submit Post</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+
     </main>
 
     <div class="row align-items-center">
-        <div class="col-md-6">
-            <img class="img-thumbnail" src="/assets/img/scenery/hero_2.jpeg?h=d9fa771f5b67e5958cd7e546f04dfe0b">
+      <div class="col-md-6">
+        <img
+          class="img-thumbnail"
+          src="/assets/img/scenery/hero_2.jpeg?h=d9fa771f5b67e5958cd7e546f04dfe0b"
+        />
+      </div>
+      <div class="col-md-6">
+        <h3>
+          <br />Advocating for pro-life &amp; pro-family policies &amp; laws<br /><br />
+        </h3>
+        <div>
+          <p>
+            <br />This involves lobbying for legislation that supports life and
+            the family unit.<br /><br />Fighting against policies that undermine
+            the value of life or the family.<br /><br />
+          </p>
         </div>
-        <div class="col-md-6">
-            <h3><br>Advocating for pro-life &amp; pro-family policies &amp; laws<br><br></h3>
-            <div>
-                <p>
-                    <br>This involves lobbying for legislation that supports life and the family unit.<br><br>Fighting against policies that undermine the value of life or the family.<br><br>
-                </p>
-            </div>
-            <button class="btn btn-outline-primary btn-lg" type="button">Learn more</button>
-        </div>
+        <button class="btn btn-outline-primary btn-lg" type="button">
+          Learn more
+        </button>
+      </div>
     </div>
 
     <!-- Start: Footer Dark -->
     <footer class="page-footer dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
-                    <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Get started</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Downloads</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>About us</h5>
+            <ul>
+              <li><a href="#">Company Information</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help desk</a></li>
+              <li><a href="#">Forums</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <p>© 2024 Copyright Text</p>
-        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 Copyright Text</p>
+      </div>
     </footer>
     <!-- End: Footer Dark -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/script.min.js?h=eaa36c7429bf27936b1059031f2a5b02"></script>
-</body>
+    <script>
+      async function fetchEvents() {
+        try {
+          const response = await fetch(
+            "https://romijatwo-aa498f54-6b7c-441f-876d.cranecloud.io/api/post",
+            {
+              method: "GET",
+              headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }
+          );
 
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          const data = await response.json();
+          console.log("Events:", data);
+
+          // Clear existing content
+          document.getElementById("eventContainer").innerHTML = "";
+
+          // Create event cards with carousels
+          data.forEach((event, index) => {
+            let carouselItems = "";
+            event.postImage.forEach((image, imgIndex) => {
+              carouselItems += `
+                            <div class="carousel-item ${
+                              imgIndex === 0 ? "active" : ""
+                            }">
+                                <img src="${
+                                  image.url
+                                }" class="d-block w-100" alt="Event Image">
+                            </div>
+                        `;
+            });
+
+            const card = `
+                        <div class="col-md-5 feature-box mb-4">
+                            <h4>${event.postName}</h4>
+                            <p>${event.postContent}</p>
+                            <div id="carousel-${index}" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    ${carouselItems}
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${index}" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-${index}" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+
+            document
+              .getElementById("eventContainer")
+              .insertAdjacentHTML("beforeend", card);
+          });
+        } catch (error) {
+          console.error("Error fetching events:", error);
+          document.getElementById("eventContainer").innerHTML =
+            "<p>Error loading events. Please try again later.</p>";
+        }
+      }
+
+      async function submitPost() {
+        const form = document.getElementById('addPostForm');
+        const formData = new FormData(form); // Handles all form data, including the file inputs
+
+        // Perform basic client-side validation before submission
+        const postName = formData.get('postName');
+        const postContent = formData.get('postContent');
+        const postImagesInput = document.getElementById('postImage');
+        const postImages = postImagesInput.files;
+
+        if (!postName || postName.trim() === '') {
+            alert('Post name is required.');
+            return;
+        }
+
+        if (!postContent || postContent.trim() === '') {
+            alert('Post content is required.');
+            return;
+        }
+
+        if (!postImages.length) {
+            alert('At least one image is required.');
+            return;
+        }
+        
+        formData.append('postImage', postImages); 
+        console.log('Form data:', formData);
+    
+
+        try {
+            // Submit the form data to the server via a POST request
+            const response = await fetch('https://romijatwo-aa498f54-6b7c-441f-876d.cranecloud.io/api/post', {
+                method: 'POST',
+                body: formData
+            });
+            console.log('Response:', response);
+            // Check if the request was successful
+            if (!response.ok) {
+                throw new Error('Failed to submit post');
+            }
+
+            alert('Post submitted successfully!');
+
+            // Optionally, reset the form and close the modal
+            form.reset();
+            var myModal = bootstrap.Modal.getInstance(document.getElementById('addPostModal'));
+            myModal.hide();
+
+        } catch (error) {
+            console.error('Error submitting post:', error.message);
+            alert('There was an error submitting your post. Please try again.');
+        }
+    }
+
+      // Call the function when the page loads
+      window.addEventListener("load", fetchEvents);
+    </script>
+  </body>
 </html>
